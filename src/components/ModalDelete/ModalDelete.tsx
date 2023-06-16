@@ -1,6 +1,11 @@
 import styles from './ModalDelete.module.css'
 
-export function ModalDelete({isOpen, deleteComment}) {
+interface ModalDeleteProps {
+  isOpen: boolean
+  deleteComment: () => void
+}
+
+export function ModalDelete({isOpen, deleteComment}: ModalDeleteProps) {
 
   if (isOpen) {
     return (
