@@ -31,7 +31,7 @@ interface IPostProps {
 export function Post({ post }: IPostProps) {
 
   // Primeiro argumento é a variavel a ser criada, o segundo é uma função para dizer ao react para atualizar a variável
-  const [comments, setComments] = useState([]) 
+  const [comments, setComments] = useState<string[]>([]) 
   //Programação declarativa
   const [newCommentText, setNewCommentText] = useState('')
 
